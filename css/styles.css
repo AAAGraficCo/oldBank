@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #006300;
+  --secondary: #f7c600;
+  --highlight: #f4f4f4;
+  --border: 4px solid var(--secondary);
+}
+
+main,
+footer {
+  min-width: 100%;
+  display: grid;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100%;
+  border-left: var(--border);
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+body {
+  /* font: 20px/1.2 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Nunito", sans-serif;
+  /* font-family: "Roboto Slab", serif; */
+}
+/* **grid** */
+/* **grid** */
+/* **grid** */
+
+main {
+  grid-template-columns: repeat (6, 1fr);
+  width: 100%;
+  /* gap: 2rem; */
+  grid-template-areas:
+    "hero hero hero hero hero aside"
+    "hero hero hero hero hero aside"
+    "hero hero hero hero hero aside"
+    "vault vault vault vault vault vault";
+}
+
+.hero {
+  grid-area: hero;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.vault {
+  grid-area: vault;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  color: var(--highlight);
+}
+
+.nav a:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* img*** */
+/* img*** */
+/* img*** */
+
+img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* **end global styles** */
+/* **end global styles** */
+/* **end global styles** */
+
+.logo {
+  height: 175px;
+
+  padding-bottom: 10px;
+  /* transform: translateY(-20px); */
+}
+
+/* header ***/
+/* header ***/
+/* header ***/
+
+header {
+  max-height: 200px;
+  background-color: var(--primary);
+  border-bottom: var(--border);
+}
+
+header,
+nav,
+.nav-ul {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.nav-li {
+  list-style: none;
+  padding-left: 12px;
+  transform: translateY(-10px);
+}
+
+.nav-li a {
+  /* justify-content: space-evenly; */
+  padding: 6px;
+}
+
+/* **Hero** */
+/* **Hero** */
+/* **Hero** */
+
+section.hero {
+  background-image: url("../img/oldBank1.jpg");
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero h1 {
+  color: var(--secondary);
+  font-size: 4rem;
+  font-family: "Roboto Slab", serif;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  left: 10%;
+}
+
+.hero-p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+  position: absolute;
+  top: 25%;
+  right: 20%;
+}
+
+/* **social** */
+/* **social** */
+/* **social** */
+
+section.social {
+  background-color: var(--primary);
+}
+
+ul.social-ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+li.social-li img {
+  max-width: 75px;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+/* li.social-li img:hover {
+  width: 120px;
+  height: auto;
+} */
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondary);
+  padding: 0.7rem;
+}
+
+section.vault {
+  background-color: var(--secondary);
+  overflow-x: hidden;
+}
+
+.vault h2 {
+  color: var(--primary);
+  padding-top: 1.5rem;
+}
+
+.vault p {
+  font-size: 1rem;
+  color: #010101;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  /* overflow: visible; */
+
+  max-width: 100%;
+}
+
+/* **footer** */
+
+footer {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--highlight);
+  background-color: var(--primary);
+  padding: 1rem;
+}
+.contact {
+  /* display: flex; */
+  grid-template-columns: repeat (2, fr);
+  width: 100%;
+  /* align-items: center; */
+  min-width: minmax(200px, 1fr);
+}
+
+.contact p {
+  font-size: 1.5rem;
+}
+
+footer h4 {
+  font-size: 0.7rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
