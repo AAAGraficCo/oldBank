@@ -241,15 +241,22 @@ section.vault {
 .menu-pics {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+
   /* grid-template-columns: repeat (2, 1fr);
   gap: 10rem; */
   /* min-width: 100%; */
 }
 
+.menu-pics img {
+  width: 50%;
+  height: auto;
+}
+
 .slider {
   display: flex;
   justify-content: space-around;
-
+  padding-bottom: 0.7rem;
   max-width: 100%;
 }
 
