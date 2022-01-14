@@ -234,10 +234,21 @@ section.vault {
   text-align: center;
 }
 
+.menu {
+  text-align: center;
+}
+
+.menu-pics {
+  display: flex;
+  align-items: center;
+  /* grid-template-columns: repeat (2, 1fr);
+  gap: 10rem; */
+  /* min-width: 100%; */
+}
+
 .slider {
   display: flex;
   justify-content: space-around;
-  /* overflow: visible; */
 
   max-width: 100%;
 }
@@ -265,9 +276,4 @@ footer {
 
 footer h4 {
   font-size: 0.7rem;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
 }
