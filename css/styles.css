@@ -146,8 +146,9 @@ nav,
 /* **Hero** */
 
 section.hero {
-  background-image: url("../img/bankSignNight.jpg");
-  background-color: #000;
+  /* background: rgb(139, 135, 19, 1); */
+  background-image: url("../img/oldBank1.jpg");
+
   background-position: center;
   background-size: cover;
   width: 100%;
