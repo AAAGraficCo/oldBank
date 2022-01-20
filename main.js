@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.slider').slick({
+        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
@@ -26,7 +27,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 351,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

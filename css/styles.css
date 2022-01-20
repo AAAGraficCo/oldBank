@@ -346,15 +346,34 @@ footer h4 {
     min-width: 100%;
     border-left: none;
   }
-  ul.social-ul {
-    display: flex;
-    justify-content: space-evenly;
-    /* margin: 0 auto; */
+  .nav-li {
+    padding-left: 0;
   }
 
   p.index-p {
     margin: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+@media (max-width: 351px) {
+  .nav {
+    margin-bottom: 1000px;
+  }
+  .nav-ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1000px;
+  }
+  .nav-li {
+    padding-bottom: 15px;
+  }
+  header {
+    padding-bottom: 365px;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
   }
 }
