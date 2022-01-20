@@ -287,3 +287,74 @@ footer {
 footer h4 {
   font-size: 0.7rem;
 }
+
+/* ***media queries*** */
+/* ***media queries*** */
+/* ***media queries*** */
+
+@media (max-width: 739px) {
+  .disappear {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 549px) {
+  .container {
+    display: block;
+  }
+  main {
+    display: block;
+  }
+  header {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+    padding-top: 1rem;
+    /* margin-bottom: 10rem; */
+  }
+  .hero {
+    min-width: 100%;
+  }
+
+  aside {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  aside ul {
+    flex-direction: row;
+  }
+  section.hero {
+    position: absolute;
+    max-height: 200px;
+    /* margin-bottom: 1000px; */
+  }
+  header,
+  nav,
+  .nav-ul {
+    /* display: none; */
+    padding-top: 1rem;
+    padding-bottom: 14rem;
+    /* border-bottom: none; */
+  }
+  .social {
+    padding-top: 200px;
+    display: block;
+    min-width: 100%;
+    border-left: none;
+  }
+  ul.social-ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+  }
+
+  p.index-p {
+    margin: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
